@@ -6,7 +6,13 @@ get '/' do
   erb :"home"
 end
 
-get '/' do 
+get '/date' do 
   @date = DateTime.now
-  erb :'date'
+  erb :"date"
 end
+
+get '/signup' do
+    @signup = ""
+    erb :"signup"
+  end
+ 
